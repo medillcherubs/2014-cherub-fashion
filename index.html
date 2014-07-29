@@ -1,29 +1,48 @@
-<!DOCTYPE html>
-<!-- Need a template like this in the future? Just google "html" -->
-<html>
-  <head>
-  	<h1> Cherubs Show Off Their Style </h1>
-    <title>  </title>
-    
-    <!-- Add the CSS for your website inside here -->
+[raw]
     <style>
+#graphic {
+width: 1040px;
+margin: 0 auto;
+}
 
-    .video{
-      margin-left: 7px;
-    }
+.full-width { margin-left: 30px; }
 
-    .imgtwo{
-      width: 250px;
-      text-align: center;
-      height: 250px;
-      width: 250px;
-      margin-left: 60px;
-      margin-top: 18px;
-      
-    }
+.row.container {
+max-width: 1140px;
+width: 1140px;
+}
+
+.img {
+background-color: #EEE;
+}
+
+#graphic .text { margin: 0 16px; float: left; }
+#graphic .slider-pro {  }
+
+#graphic .slider-pro.minimal-dark, .slide-wrapper {
+  width: 200px !important;
+  height: 300px !important;
+}
+
+#graphic .minimal-dark .slide-arrows a.previous {
+  left: 0px;
+  background-size: 50px 40px;
+  width: 25px;
+  height: 40px;
+}
+
+#graphic .minimal-dark .slide-arrows a.next {
+  right: 0;
+  background-position: -24px 0;
+  background-size: 50px 40px;
+  width: 25px;
+}
+
+#graphic .minimal-dark .slide-arrows a {
+  top: 56%;
+}
         
-
-    .imgone{ 
+   #graphic .imgone{ 
             width: 200px;
             height: 300px;
             margin-left: 60px;
@@ -31,328 +50,281 @@
             
 
             }
-    .firsttext{ margin-top: 42px;
+   #graphic .firsttext{ margin-top: 42px;
                 margin-bottom: 0px;
                 font-family: georgia;
                 font-size: 120%;
                 margin-left: 0px;
                 
               }
-    .secondtext{
+   #graphic .secondtext{
                 font-family: georgia;
                 font-size: 120%;
                 margin-top: 8px;
                 margin-bottom: 0px;
                 }
-    .thirdtext{
+   #graphic .thirdtext{
                 font-family: georgia;
                 font-size: 120%;
                 margin-top: 8px;
                 margin-bottom: 0px;
                 
     }
-    .fourthtext{
+   #graphic .fourthtext{
                 font-family: georgia;
                 font-size: 120%;
                 margin-top: 8px;
                 
     }
-    body { max-width: 968px;}
 
-    .cherub {
-    	border: 0px solid black;
-    	position: relative;
+   #graphic .cherub {
+      border: 0px solid black;
+      position: relative;
       margin-bottom: 100px;
       margin-top: 0px;
     }
 
-    .cherub div {
-    	border: 0px solid orange;
-    	width: 320px;
-      height: 250px;
-    	float: left;
+   #graphic .cherub .img {
+      float: left;
     }
 
-    .cf:before,
-	.cf:after {
-	    content: " "; /* 1 */
-	    display: table; /* 2 */
-	}
+   #graphic .text, article p { width: 300px; }
+   #graphic .img { width: 200px; }
 
-	.cf:after {
-	    clear: both;
-	}
+   #graphic .cf:before,
+ #graphic .cf:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
 
-  .star{
+ #graphic .cf:after {
+      clear: both;
+  }
+
+ #graphic .star{
     margin-top: 5px;
   }  
 
-  .orange {
+ #graphic .orange {
     margin-top: 15px;
   }
 
-  .jeans{
+ #graphic .jeans{
     margin-top: 9px;
   }
 
-  .red{
+ #graphic .red{
     margin-top: 12px;
   }
 
-  .floral {
+ #graphic .floral {
     font-size: 87%;
 
   }
 
-  .barneys {
+ #graphic .barneys {
     margin-top: 7px;
   }
 
-  .ripped{
+ #graphic .ripped{
     margin-top: 13px;
   }
 
-  .checkered{
+ #graphic .checkered{
     margin-top: 5px;
   }
 
-  .ombre{
+ #graphic .ombre{
     margin-top: 7px;
   }
 
-  .grass{
+ #graphic .grass{
     margin-top: 0px;
   }
 
-  .fanny{
+ #graphic .fanny{
     margin-top: 15px;
   }
 
-  .socks{
+ #graphic .socks{
     margin-top: 4px;
   }
 
-  .name{
+ #graphic .name{
     font-size: 100%;
     margin-top: 43px;
   }
 
-  .age{
+ #graphic .age{
     font-size: 100%;
   }
 
-  .bio{
+ #graphic .bio{
     font-size: 100%;
   }
 
-  .biotwo{
+ #graphic .biotwo{
     font-size: 100%;
   }
 
-  .town{
+ #graphic .town{
     font-size: 100%;
   }
 
-  .video{
+ #graphic .video{
     margin-left: 7px;
+    width: 500px;
+    float: left;
   }
 
-  .fern{
+ #graphic .fern{
     margin-top: 8px;
   }
     </style>
-  </head>
+[/raw]
+<div id="graphic">
+<div class="cherub cf">
+<div class="img">[slider_pro id="11"]</div>
+<div class="text star">
+<p class="firsttext">Name: Kathy Zhu</p>
+<p class="secondtext">Hometown: Wuxi, Jiangsu Province, China</p>
+<p class="thirdtext">Age: 17</p>
+<p class="fourthtext">"I'd say my style is childish. I learn a lot from Japanese and British styles. I love colorful things, and I love to stand out."</p>
 
-  <body>
-    <!-- The content of your website goes here. -->
-    <div class="cherub cf">
-	    <div class="img"> 
-	    	<img class="imgone" src="img/Middlekauff-0552.jpg" height=25%>  
-	    </div>
-	    <div class="text star"> 
-	    	<p class="firsttext"> Name: Kathy Zhu </p>
-		    <p class="secondtext"> Hometown: Wuxi, Jiangsu Province, China </p>
-		    <p class="thirdtext"> Age: 17 </p>
-		    <p class="fourthtext"> "I'd say my style is childish. I learn a lot from Japanese and British styles. I love colorful things, and I love to stand out." </p> 
-		  </div>
-	    <div class="video"> 
-	    	<iframe src="http://player.vimeo.com/video/102032559" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	    </div>
-    </div>
-    <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0657.jpg" height=25%>  
-      </div>
-      <div class="text orange"> 
-        <p class="firsttext"> Name: Jimmy Lafakis </p>
-        <p class="secondtext"> Hometown: Schererville, Indiana </p>
-        <p class="thirdtext"> Age: 18 </p>
-        <p class="fourthtext"> "Color coordination is a big part of my wardrobe. I love sports, so I'm usually wearing a jersey. I own 15 pairs of Derrick Rose Adidas shoes." </p> 
-      </div>
-      <div class="video"> 
-        <iframe src="http://player.vimeo.com/video/101984962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-      </div>
-    </div>
-	  <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0670.jpg" height=25%>  
-      </div>
-      <div class="text jeans"> 
-        <p class="firsttext"> Name: Grace Rogers </p>
-        <p class="secondtext"> Hometown: Vienna, Virginia </p>
-        <p class="thirdtext"> Age: 17 </p>
-        <p class="fourthtext"> "I'm all about being casual. Flannels, dark colors, simple T-shirts and stripes are my staples. My best treasures are thrifted (and from the men's section)." </p> 
-      </div>
-      <div class="video"> 
-       <iframe src="http://player.vimeo.com/video/101984997" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0699.jpg" height=25%>  
-      </div>
-      <div class="text red"> 
-        <p class="firsttext"> Name: Morgan Chen </p>
-        <p class="secondtext"> Hometown: San Diego, California </p>
-        <p class="thirdtext"> Age: 17 </p>
-        <p class="fourthtext"> "I would describe my style as punk rock and witchy. I've always been inspired by strange and dark fantasy, and that influences how I dress, along with my musical taste." </p> 
-      </div>
-      <div class="video"> 
-        <iframe src="http://player.vimeo.com/video/101984960" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-      </div>
-    </div>
-    
-    <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0719.jpg" height=25%>  
-      </div>
-      <div class="text floral"> 
-        <p class="name"> Names: Meredith Sheldon (left), Kelli Nguyen (right) </p>
-        <p class="town"> Hometowns: Weston, Florida (Sheldon); Piedmont, California (Nguyen) </p>
-        <p class="age"> Ages: 16 (Sheldon); 17 (Nguyen) </p>
-        <p class="bio"> Sheldon: "I keep it simple. My style consists of jeans or leggings, a basic flowing top and a cardigan of some kind." </p>
-        <p class="biotwo"> Nguyen: "I would describe my style as preppy. The only reason I stick to preppy is because when I try other things I inevitably look dumb." </p>
- </p> 
-      </div>
-      <div class="video"> 
-        <iframe src="http://player.vimeo.com/video/102032558" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0791.jpg" height=25%>  
-      </div>
-      <div class="text barneys"> 
-        <p class="firsttext"> Name: David Fishman </p>
-        <p class="secondtext"> Hometown: New York, New York </p>
-        <p class="thirdtext"> Age: 17 </p>
-        <p class="fourthtext"> "My preppy, semi-formal style has been heavily influenced by my friends. I think how you dress determines how others perceive you, so I choose to dress well." </p> 
-      </div>
-      <div class="video"> 
-       <iframe src="http://player.vimeo.com/video/101984961" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-      </div>
-    </div>
-    <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0807.jpg" height=25%>  
-      </div>
-      <div class="text ripped"> 
-        <p class="firsttext"> Name: Melody Park </p>
-        <p class="secondtext"> Hometown: Northridge, California </p>
-        <p class="thirdtext"> Age: 16 </p>
-        <p class="fourthtext"> "I keep my style pretty simple and laid back. My friends have called my style a 'classy vintage,' which, I think, is pretty accurate." </p> 
-      </div>
-      <div class="video"> 
-       <iframe src="http://player.vimeo.com/video/101984994" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-      </div>
-    </div>
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/102032559" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="16"]</div>
+<div class="text orange">
+<p class="firsttext">Name: Jimmy Lafakis</p>
+<p class="secondtext">Hometown: Schererville, Indiana</p>
+<p class="thirdtext">Age: 18</p>
+<p class="fourthtext">"Color coordination is a big part of my wardrobe. I love sports, so I'm usually wearing a jersey. I own 15 pairs of Derrick Rose Adidas shoes."</p>
 
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/101984962" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="17"]</div>
+<div class="text jeans">
+<p class="firsttext">Name: Grace Rogers</p>
+<p class="secondtext">Hometown: Vienna, Virginia</p>
+<p class="thirdtext">Age: 17</p>
+<p class="fourthtext">"I'm all about being casual. Flannels, dark colors, simple T-shirts and stripes are my staples. My best treasures are thrifted (and from the men's section)."</p>
 
-      <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0840-2.jpg" height=25% width="500px">  
-      </div>
-      <div class="text socks"> 
-        <p class="firsttext"> Name: Dan Waldman </p>
-        <p class="secondtext"> Hometown: Owings Mills, Maryland </p>
-        <p class="thirdtext"> Age: 17 </p>
-        <p class="fourthtext"> "My socks are a way for me to express my creativity. People back in Baltimore know me for my socks, and I love having a defining characteristic." </p> 
-    </div>
-      <div class="video"> 
-        <iframe src="http://player.vimeo.com/video/101985009" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-    </div>
-      <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0855.jpg" height=25%>  
-      </div>
-      <div class="text checkered"> 
-        <p class="firsttext"> Name: Lily Sperry </p>
-        <p class="secondtext"> Hometown: Chicago, Illinois </p>
-        <p class="thirdtext"> Age: 17 </p>
-        <p class="fourthtext"> "My style has evolved over the past few months. I'm currently trying to stock my wardrobe with basics that I can mix with graphic pieces for the perfect balance." </p> 
-    </div>
-      <div class="video"> 
-        <iframe src="http://player.vimeo.com/video/101984999" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-    </div>
-      <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0900.jpg" height=25%>  
-      </div>
-      <div class="text ombre"> 
-        <p class="firsttext"> Name: Shereen Al-Sawwaf </p>
-        <p class="secondtext"> Hometown: Edgewater, New Jersey </p>
-        <p class="thirdtext"> Age: 17 </p>
-        <p class="fourthtext"> "I tend to dress in three colors: black, white and gray. I have a lot of classic pieces in my wardrobe that I mix and match with whatever modern stuff I'm wearing." </p> 
-    </div>
-      <div class="video"> 
-        <iframe src="http://player.vimeo.com/video/101984958" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-      </div>
-    </div>
-      <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0605.jpg" height=25%>  
-      </div>
-      <div class="text grass"> 
-        <p class="firsttext"> Name: Julia Song </p>
-        <p class="secondtext"> Hometown: Gangwon-do, Republic of Korea </p>
-        <p class="thirdtext"> Age: 17 </p>
-        <p class="fourthtext"> "I love clashing patterns, colors and oversized anything. My wardrobe is menswear- and grandma-inspired, so I own way too many sweaters, thrift a lot and love socks with sandals." </p> 
-    </div>
-      <div class="video"> 
-        <iframe src="http://player.vimeo.com/video/101984998" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-      </div>
-    </div>
-      <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0631.jpg" height=25%>  
-      </div>
-      <div class="text fanny"> 
-        <p class="firsttext"> Name: Stephanie Namkoong </p>
-        <p class="secondtext"> Hometown: Long Grove, Illinois </p>
-        <p class="thirdtext"> Age: 17 </p>
-        <p class="fourthtext"> "I would say that I dress more urban and edgy, but sometimes I definitely go all-out girly with dresses and heels." </p> 
-    </div>
-      <div class="video"> 
-        <iframe src="http://player.vimeo.com/video/101984993" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-    </div>
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/101984997" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="18"]</div>
+<div class="text red">
+<p class="firsttext">Name: Morgan Chen</p>
+<p class="secondtext">Hometown: San Diego, California</p>
+<p class="thirdtext">Age: 17</p>
+<p class="fourthtext">"I would describe my style as punk rock and witchy. I've always been inspired by strange and dark fantasy, and that influences how I dress, along with my musical taste."</p>
 
-    <div class="cherub cf">
-      <div class="img"> 
-        <img class="imgone" src="img/Middlekauff-0908.jpg" height=25% width="500px">  
-      </div>
-      <div class="text fern"> 
-        <p class="firsttext"> Name: Fernando Stepensky </p>
-        <p class="secondtext"> Hometown: San Diego, California </p>
-        <p class="thirdtext"> Age: 17 </p>
-        <p class="fourthtext"> "I have a very Southern California sense of style. I like wearing comfortable clothes that still look cool without needing too much effort." </p> 
-    </div>
-      <div class="video"> 
-        <iframe src="http://player.vimeo.com/video/102032515" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-    </div>
-  </body>
-</html>
-  
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/101984960" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="19"]</div>
+<div class="text floral">
+<p class="name">Names: Meredith Sheldon (left), Kelli Nguyen (right)</p>
+<p class="town">Hometowns: Weston, Florida (Sheldon); Piedmont, California (Nguyen)</p>
+<p class="age">Ages: 16 (Sheldon); 17 (Nguyen)</p>
+<p class="bio">Sheldon: "I keep it simple. My style consists of jeans or leggings, a basic flowing top and a cardigan of some kind."</p>
+<p class="biotwo">Nguyen: "I would describe my style as preppy. The only reason I stick to preppy is because when I try other things I inevitably look dumb."</p>
+
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/102032558" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="27"]</div>
+<div class="text barneys">
+<p class="firsttext">Name: David Fishman</p>
+<p class="secondtext">Hometown: New York, New York</p>
+<p class="thirdtext">Age: 17</p>
+<p class="fourthtext">"My preppy, semi-formal style has been heavily influenced by my friends. I think how you dress determines how others perceive you, so I choose to dress well."</p>
+
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/101984961" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="21"]</div>
+<div class="text ripped">
+<p class="firsttext">Name: Melody Park</p>
+<p class="secondtext">Hometown: Northridge, California</p>
+<p class="thirdtext">Age: 16</p>
+<p class="fourthtext">"I keep my style pretty simple and laid back. My friends have called my style a 'classy vintage,' which, I think, is pretty accurate."</p>
+
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/101984994" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="22"]</div>
+<div class="text socks">
+<p class="firsttext">Name: Dan Waldman</p>
+<p class="secondtext">Hometown: Owings Mills, Maryland</p>
+<p class="thirdtext">Age: 17</p>
+<p class="fourthtext">"My socks are a way for me to express my creativity. People back in Baltimore know me for my socks, and I love having a defining characteristic."</p>
+
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/101985009" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="23"]</div>
+<div class="text checkered">
+<p class="firsttext">Name: Lily Sperry</p>
+<p class="secondtext">Hometown: Chicago, Illinois</p>
+<p class="thirdtext">Age: 17</p>
+<p class="fourthtext">"My style has evolved over the past few months. I'm currently trying to stock my wardrobe with basics that I can mix with graphic pieces for the perfect balance."</p>
+
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/101984999" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="29"]</div>
+<div class="text ombre">
+<p class="firsttext">Name: Shereen Al-Sawwaf</p>
+<p class="secondtext">Hometown: Edgewater, New Jersey</p>
+<p class="thirdtext">Age: 17</p>
+<p class="fourthtext">"I tend to dress in three colors: black, white and gray. I have a lot of classic pieces in my wardrobe that I mix and match with whatever modern stuff I'm wearing."</p>
+
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/101984958" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="24"]</div>
+<div class="text grass">
+<p class="firsttext">Name: Julia Song</p>
+<p class="secondtext">Hometown: Gangwon-do, Republic of Korea</p>
+<p class="thirdtext">Age: 17</p>
+<p class="fourthtext">"I love clashing patterns, colors and oversized anything. My wardrobe is menswear- and grandma-inspired, so I own way too many sweaters, thrift a lot and love socks with sandals."</p>
+
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/101984998" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="25"]</div>
+<div class="text fanny">
+<p class="firsttext">Name: Stephanie Namkoong</p>
+<p class="secondtext">Hometown: Long Grove, Illinois</p>
+<p class="thirdtext">Age: 17</p>
+<p class="fourthtext">"I would say that I dress more urban and edgy, but sometimes I definitely go all-out girly with dresses and heels."</p>
+
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/101984993" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="cherub cf">
+<div class="img">[slider_pro id="26"]</div>
+<div class="text fern">
+<p class="firsttext">Name: Fernando Stepensky</p>
+<p class="secondtext">Hometown: San Diego, California</p>
+<p class="thirdtext">Age: 17</p>
+<p class="fourthtext">"I have a very Southern California sense of style. I like wearing comfortable clothes that still look cool without needing too much effort."</p>
+
+</div>
+<div class="video"><iframe src="http://player.vimeo.com/video/102032515" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+</div>
